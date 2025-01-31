@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evidence Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="background-overlay"></div>
+    <div class="container">
+      <header class="spooky-header">
+        <h1>Evidence Tracker</h1>
+        <p class="subtitle">Identify ghosts by selecting evidence</p>
+      </header>
+
+      <main>
+        <!-- Evidence Tracker Section -->
+        <section id="evidence-tracker" class="card">
+          <div class="section-header">
+            <h2><i class="fas fa-ghost"></i> Evidence Tracker</h2>
+            <button id="reset-button" class="icon-button">
+              <i class="fas fa-sync-alt"></i> Reset
+            </button>
+          </div>
+          <!-- Add the evidence list container here -->
+          <div id="evidence-list" class="evidence-grid"></div>
+        </section>
+        <!-- Possible Ghosts Section -->
+        <section id="guide" class="card">
+          <h2><i class="fas fa-book-dead"></i> Possible Ghosts</h2>
+          <div id="guide-content" class="ghost-grid"></div>
+        </section>
+      </main>
+
+      <div id="pagination" class="pagination"></div>
+
+      <!-- Back Button -->
+      <a href="../index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+      // Populate Evidence List
+      const evidenceList = document.getElementById("evidence-list");
+      if (evidenceList) {
+        evidenceTypes.forEach((evidence) => {
+          const evidenceItem = document.createElement("div");
+          evidenceItem.classList.add("evidence-item");
+          evidenceItem.innerText = evidence;
+          evidenceItem.addEventListener("click", () =>
+            toggleEvidence(evidence)
+          );
+          evidenceList.appendChild(evidenceItem);
+        });
+      } else {
+        console.error("Element with ID 'evidence-list' not found in the HTML.");
+      }
+    </script>
+  </body>
+</html>

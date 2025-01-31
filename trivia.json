@@ -1,0 +1,106 @@
+[
+  {
+    "question": "Which ghost is most likely to attack when its target is alone?",
+    "options": ["Spirit", "Demon", "Banshee"],
+    "answer": "Banshee"
+  },
+  {
+    "question": "What tool detects fingerprints?",
+    "options": ["UV Light", "EMF Reader", "Ghost Writing Book"],
+    "answer": "UV Light"
+  },
+  {
+    "question": "Which ghost can manipulate multiple objects at once?",
+    "options": ["Poltergeist", "Shade", "Yurei"],
+    "answer": "Poltergeist"
+  },
+  {
+    "question": "What evidence does a Wraith leave behind?",
+    "options": ["Fingerprints", "Ghost Orb", "No footprints"],
+    "answer": "No footprints"
+  },
+  {
+    "question": "Which ghost becomes faster near active electronics?",
+    "options": ["Raiju", "Mare", "Revenant"],
+    "answer": "Raiju"
+  },
+  {
+    "question": "What's the primary strength of a Demon?",
+    "options": ["Frequent hunts", "Early hunts", "Fast movement"],
+    "answer": "Early hunts"
+  },
+  {
+    "question": "Which evidence requires motion detection?",
+    "options": ["DOTS Projector", "Spirit Box", "EMF"],
+    "answer": "EMF 5"
+  },
+  {
+    "question": "What helps protect against ghost attacks?",
+    "options": ["Crucifix", "Flashlight", "Thermometer"],
+    "answer": "Crucifix"
+  },
+  {
+    "question": "Which ghost affects sanity quickly when nearby?",
+    "options": ["Phantom", "Yurei", "Oni"],
+    "answer": "Yurei"
+  },
+  {
+    "question": "What's unique about Obake fingerprints?",
+    "options": ["Glow blue", "Six fingers", "Disappear quickly"],
+    "answer": "Six fingers"
+  },
+  {
+    "question": "Which ghost can change its evidence when interacting with doors or objects?",
+    "options": ["Obake", "Phantom", "Wraith"],
+    "answer": "Obake"
+  },
+  {
+    "question": "Which ghost is known for mimicking the abilities of other ghosts?",
+    "options": ["Mimic", "Shade", "Onryo"],
+    "answer": "Mimic"
+  },
+  {
+    "question": "Which ghost has an increased chance to attack when players have high sanity?",
+    "options": ["Demon", "Oni", "Shade"],
+    "answer": "Demon"
+  },
+  {
+    "question": "What tool is essential for detecting a Wraith’s presence?",
+    "options": ["Salt", "Thermometer", "Motion Sensor"],
+    "answer": "Salt"
+  },
+  {
+    "question": "Which ghost prefers attacking only in the dark?",
+    "options": ["Mare", "Poltergeist", "Banshee"],
+    "answer": "Mare"
+  },
+  {
+    "question": "Which ghost is known for not leaving footprints after stepping in salt?",
+    "options": ["Wraith", "Hantu", "Revenant"],
+    "answer": "Wraith"
+  },
+  {
+    "question": "Which ghost tends to roam long distances within a location?",
+    "options": ["Yokai", "Myling", "Goryo"],
+    "answer": "Yokai"
+  },
+  {
+    "question": "Which ghost makes its presence known by throwing objects frequently?",
+    "options": ["Poltergeist", "Revenant", "Demon"],
+    "answer": "Poltergeist"
+  },
+  {
+    "question": "What unique trait does a Goryo exhibit with the DOTS projector?",
+    "options": [
+      "Only visible through a camera",
+      "Appears brighter",
+      "Moves faster"
+    ],
+    "answer": "Only visible through a camera"
+  },
+  {
+    "question": "Which ghost’s hunt speed increases significantly when chasing a player?",
+    "options": ["Revenant", "Hantu", "Banshee"],
+    "answer": "Revenant"
+  }
+]

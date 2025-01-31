@@ -1,0 +1,425 @@
+/* Existing CSS */
+:root {
+  --primary-red: #ff4444;
+  --ghost-green: #66ff66;
+  --dark-bg: rgba(0, 0, 0, 0.85);
+  --section-spacing: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Verdana", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("assets/spooky-img.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  transform: translateZ(-1px) scale(2);
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.nav-link {
+  background: var(--primary-red);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: #ff2d2d;
+  transform: translateY(-2px);
+}
+
+/* Responsive Navigation for Mobile Devices */
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center-align the links */
+    gap: 0.5rem; /* Reduce gap between stacked links */
+  }
+
+  .nav-link {
+    width: 80%; /* Make buttons wider for better touch targets */
+    text-align: center; /* Center text inside buttons */
+  }
+}
+
+/* Back Button */
+.back-button {
+  position: sticky;
+  bottom: 20px;
+  left: 20px;
+  background: var(--primary-red);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+}
+
+.back-button:hover {
+  background: #ff2d2d;
+  transition: transform 0.2s ease;
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(255, 68, 68, 0.8);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.spooky-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  border-bottom: 2px solid var(--primary-red);
+}
+
+.spooky-header h1 {
+  font-family: "Creepster", cursive;
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px var(--primary-red), 0 0 20px var(--primary-red);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px var(--primary-red), 0 0 20px var(--primary-red);
+  }
+  to {
+    text-shadow: 0 0 20px var(--primary-red), 0 0 40px var(--primary-red);
+  }
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--ghost-green);
+  text-shadow: 1px 1px 3px #000;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--section-spacing);
+  padding: 1rem 0;
+}
+
+.card {
+  background: var(--dark-bg);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(255, 68, 68, 0.2);
+  border: 1px solid rgba(255, 68, 68, 0.3);
+  animation: fadeInUp 0.5s ease;
+  transform: translateY(20px);
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.evidence-item {
+  padding: 1rem;
+  border: 2px solid var(--primary-red);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.evidence-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 68, 68, 0.5);
+}
+
+.evidence-item.selected {
+  background: var(--primary-red);
+  font-weight: bold;
+  box-shadow: 0 0 15px var(--primary-red);
+  animation: pulse 1.5s infinite;
+}
+
+.ghost-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.ghost-card {
+  background: rgba(30, 30, 30, 0.9);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-red);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ghost-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 68, 68, 0.3);
+}
+
+.ghost-card h3 {
+  color: var(--primary-red);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.ghost-evidence {
+  color: var(--ghost-green);
+  font-size: 0.9em;
+  margin: 0.5rem 0;
+}
+
+button {
+  background: var(--primary-red);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+}
+
+button:hover {
+  background: #ff2d2d;
+  transition: transform 0.2s ease;
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(255, 68, 68, 0.8);
+}
+
+.icon-button {
+  padding: 0.5rem 1rem;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.trivia-question {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.question-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.trivia-options {
+  display: grid;
+  gap: 1rem;
+}
+
+.trivia-option {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trivia-option:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+}
+
+.trivia-option.correct {
+  background: rgba(102, 255, 102, 0.2) !important;
+  border-color: var(--ghost-green);
+}
+
+.trivia-option.wrong {
+  background: rgba(255, 68, 68, 0.2) !important;
+  border-color: var(--primary-red);
+}
+
+.trivia-progress {
+  margin-top: 1rem;
+  font-size: 0.9em;
+  color: var(--ghost-green);
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
+  border: 2px solid var(--primary-red);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.search-bar::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Ghost Cards */
+.ghost-card {
+  background: rgba(30, 30, 30, 0.9);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-red);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.ghost-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 68, 68, 0.3);
+}
+
+.ghost-card h3 {
+  color: var(--primary-red);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.ghost-evidence,
+.ghost-ability,
+.ghost-weakness {
+  margin: 0.5rem 0;
+  font-size: 0.9em;
+}
+
+.ghost-evidence strong,
+.ghost-ability strong,
+.ghost-weakness strong {
+  color: var(--ghost-green);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.pagination button {
+  background: var(--primary-red);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination button:disabled {
+  background: rgba(255, 68, 68, 0.5);
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #ff2d2d;
+  transform: translateY(-2px);
+}
+
+#retry-trivia {
+  margin-top: 1rem;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spooky-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

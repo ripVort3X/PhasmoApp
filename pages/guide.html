@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghost Guide</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="background-overlay"></div>
+    <div class="container">
+      <header class="spooky-header">
+        <h1>Ghost Guide</h1>
+        <p class="subtitle">Learn about ghosts and how to survive</p>
+      </header>
+
+      <!-- Search Bar -->
+      <input
+        type="text"
+        id="search-bar"
+        placeholder="Search for a ghost..."
+        class="search-bar"
+      />
+
+      <!-- Ghost List -->
+      <main>
+        <section id="guide" class="card">
+          <h2><i class="fas fa-book-dead"></i> Ghost Guide</h2>
+          <div id="guide-content" class="ghost-grid"></div>
+        </section>
+      </main>
+
+      <!-- Pagination -->
+      <div id="pagination" class="pagination"></div>
+
+      <!-- Back Button -->
+      <a href="../index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+      // Search Bar Functionality
+      document.getElementById("search-bar").addEventListener("input", (e) => {
+        const searchTerm = e.target.value.toLowerCase().trim();
+        const filteredGhosts = ghosts.filter((ghost) =>
+          ghost.name.toLowerCase().includes(searchTerm)
+        );
+        currentPage = 1; // Reset to the first page when searching
+        displayGhosts(filteredGhosts, currentPage);
+      });
+    </script>
+  </body>
+</html>

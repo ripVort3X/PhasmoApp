@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Spirit",
+    "evidences": ["EMF 5", "Spirit Box", "Ghost Writing"],
+    "description": "A standard ghost with no unique strengths but remains a persistent threat.",
+    "ability": "No unique ability but hunts regularly.",
+    "weakness": "Smudge Sticks extend its inactivity."
+  },
+  {
+    "name": "Wraith",
+    "evidences": ["EMF 5", "Spirit Box", "D.O.T.S Projector"],
+    "description": "A supernatural entity that can teleport to players and avoids leaving traces.",
+    "ability": "Never leaves footprints in salt; teleports to targets.",
+    "weakness": "Can’t step in salt."
+  },
+  {
+    "name": "Phantom",
+    "evidences": ["Spirit Box", "Fingerprints", "D.O.T.S Projector"],
+    "description": "A ghost that distorts vision and rapidly drains sanity when observed.",
+    "ability": "Drains sanity when looked at; disappears during hunts when taken a photo.",
+    "weakness": "Taking a photo makes it vanish."
+  },
+  {
+    "name": "Poltergeist",
+    "evidences": ["Spirit Box", "Ghost Orb", "Fingerprints"],
+    "description": "A mischievous ghost that thrives on chaos by throwing objects violently.",
+    "ability": "Throws multiple objects at once.",
+    "weakness": "Useless in an empty room."
+  },
+  {
+    "name": "Banshee",
+    "evidences": ["D.O.T.S Projector", "Fingerprints", "Freezing Temperatures"],
+    "description": "A ghostly hunter that fixates on one target at a time, often singing before it strikes.",
+    "ability": "Targets one player at a time; sings often.",
+    "weakness": "Crucifix has extended range."
+  },
+  {
+    "name": "Jinn",
+    "evidences": ["EMF 5", "Fingerprints", "Freezing Temperatures"],
+    "description": "A territorial entity that becomes significantly faster when chasing its prey.",
+    "ability": "Moves faster when a player is far away.",
+    "weakness": "Power breaker disables its speed."
+  },
+  {
+    "name": "Mare",
+    "evidences": ["Spirit Box", "Ghost Orb", "Ghost Writing"],
+    "description": "A creature of darkness that thrives in unlit areas and is more aggressive at night.",
+    "ability": "Prefers darkness; more likely to turn off lights.",
+    "weakness": "Turning on lights reduces its aggression."
+  },
+  {
+    "name": "Revenant",
+    "evidences": ["Ghost Orb", "Ghost Writing", "Freezing Temperatures"],
+    "description": "A slow-moving ghost that turns into a relentless predator when it spots its prey.",
+    "ability": "Moves extremely fast when chasing but slow otherwise.",
+    "weakness": "Hiding slows it down significantly."
+  },
+  {
+    "name": "Shade",
+    "evidences": ["EMF 5", "Ghost Orb", "Ghost Writing"],
+    "description": "A shy ghost that avoids revealing itself, making detection difficult.",
+    "ability": "Less active with multiple people nearby.",
+    "weakness": "Hard to find due to low activity."
+  },
+  {
+    "name": "Demon",
+    "evidences": ["Fingerprints", "Ghost Writing", "Freezing Temperatures"],
+    "description": "A ruthless ghost that is unrelenting and can hunt at unusually high sanity levels.",
+    "ability": "Hunts more frequently than other ghosts.",
+    "weakness": "Crucifix is more effective."
+  },
+  {
+    "name": "Yurei",
+    "evidences": ["D.O.T.S Projector", "Ghost Orb", "Freezing Temperatures"],
+    "description": "A vengeful spirit that exerts a strong mental influence, draining sanity faster than others.",
+    "ability": "Drains sanity faster than others.",
+    "weakness": "Smudging prevents it from roaming."
+  },
+  {
+    "name": "Oni",
+    "evidences": ["EMF 5", "D.O.T.S Projector", "Freezing Temperatures"],
+    "description": "A highly aggressive ghost that reveals itself more often and interacts frequently.",
+    "ability": "More visible and throws objects often.",
+    "weakness": "More active with multiple players nearby."
+  },
+  {
+    "name": "Yokai",
+    "evidences": ["Spirit Box", "Ghost Orb", "D.O.T.S Projector"],
+    "description": "A ghost drawn to human voices, increasing its aggression when players speak nearby.",
+    "ability": "Can’t hear players from far but hunts more with talking.",
+    "weakness": "Talking nearby increases its aggression."
+  },
+  {
+    "name": "Hantu",
+    "evidences": ["Fingerprints", "Ghost Orb", "Freezing Temperatures"],
+    "description": "A ghost that thrives in the cold, becoming faster in low temperatures.",
+    "ability": "Moves faster in colder environments.",
+    "weakness": "Power breaker makes it slower."
+  },
+  {
+    "name": "Goryo",
+    "evidences": ["EMF 5", "Fingerprints", "D.O.T.S Projector"],
+    "description": "A ghost that only manifests in the D.O.T.S projector when viewed through a camera.",
+    "ability": "Only appears on DOTS through a camera.",
+    "weakness": "Does not roam far from its room."
+  },
+  {
+    "name": "Myling",
+    "evidences": ["EMF 5", "Fingerprints", "Ghost Writing"],
+    "description": "A stealthy ghost that is nearly silent during hunts but makes loud noises otherwise.",
+    "ability": "Quieter when hunting.",
+    "weakness": "Loud when not hunting."
+  },
+  {
+    "name": "Onryo",
+    "evidences": ["Spirit Box", "Ghost Orb", "Freezing Temperatures"],
+    "description": "A spirit of vengeance that grows aggressive when fire is extinguished nearby.",
+    "ability": "Extinguishing flames increases hunt chances.",
+    "weakness": "Fire deters hunts."
+  },
+  {
+    "name": "The Twins",
+    "evidences": ["EMF 5", "Spirit Box", "Freezing Temperatures"],
+    "description": "A pair of ghosts that can interact with different locations at the same time.",
+    "ability": "Two entities with independent interactions.",
+    "weakness": "One moves slower when hunting."
+  },
+  {
+    "name": "Raiju",
+    "evidences": ["EMF 5", "Ghost Orb", "D.O.T.S Projector"],
+    "description": "A ghost that feeds on electrical energy, increasing its speed around active devices.",
+    "ability": "Becomes faster near electronics.",
+    "weakness": "Turning off electronics weakens it."
+  },
+  {
+    "name": "Obake",
+    "evidences": ["EMF 5", "Fingerprints", "Ghost Orb"],
+    "description": "A deceptive spirit that can alter its fingerprints and change evidence.",
+    "ability": "Occasionally changes its evidence (e.g., extra fingerprints).",
+    "weakness": "Fingerprints disappear faster."
+  },
+  {
+    "name": "The Mimic",
+    "evidences": ["Spirit Box", "Fingerprints", "Freezing Temperatures"],
+    "description": "A mysterious ghost that imitates the abilities of other spirits and creates false Ghost Orbs.",
+    "ability": "Mimics other ghosts, including their evidence.",
+    "weakness": "Gives 4 evidence. Fake Evidence: Ghost Orb."
+  },
+  {
+    "name": "Moroi",
+    "evidences": ["Spirit Box", "Ghost Writing", "Freezing Temperatures"],
+    "description": "A cursed spirit that weakens its victims by draining sanity at an alarming rate.",
+    "ability": "Sanity drain is extreme; speeds up based on sanity.",
+    "weakness": "Smudging temporarily blinds it."
+  },
+  {
+    "name": "Deogen",
+    "evidences": ["Spirit Box", "Ghost Writing", "D.O.T.S Projector"],
+    "description": "A ghost that relentlessly tracks its prey but moves slowly when close.",
+    "ability": "Always knows where you are but is extremely slow.",
+    "weakness": "Running away is easy."
+  },
+  {
+    "name": "Thaye",
+    "evidences": ["Ghost Orb", "Ghost Writing", "D.O.T.S Projector"],
+    "description": "A ghost that starts off aggressive but weakens over time as it ages.",
+    "ability": "Starts aggressive but weakens over time.",
+    "weakness": "Ages and slows down."
+  }
+]
