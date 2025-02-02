@@ -7,8 +7,7 @@
 ✅ **Evidence Tracker** – Log in-game evidence to identify ghosts faster.  
 ✅ **Ghost Guide** – Comprehensive details on every ghost type, their behaviors, and weaknesses.  
 ✅ **Trivia Section** – Challenge yourself with Phasmophobia-related quizzes and facts.  
-✅ **User-Friendly Interface** – Sleek and responsive design for easy access on any device.  
-✅ **Always Up-to-Date** – Updated regularly to match the latest game changes.
+✅ **User-Friendly Interface** – Sleek and responsive design for easy access on any device. 
 
 ---
 
