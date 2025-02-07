@@ -20,8 +20,6 @@
 
 ---
 
----
-
 ## 💡 Future Plans
 
 🔹 More trivia questions & difficulty levels.  
